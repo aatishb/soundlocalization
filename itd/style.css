@@ -45,7 +45,7 @@ html, body {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
   width: 100%; /* Full-width */
-  height: 1.5rem; /* Specified height */
+  height: 2rem; /* Specified height */
   border-radius: 1rem;
   background: #ecdfc8; /* Grey background */
   outline: none; /* Remove outline */
@@ -55,16 +55,16 @@ html, body {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 1.5rem; /* Set a specific slider handle width */
-  height: 1.5rem; /* Slider handle height */
+  width: 2rem; /* Set a specific slider handle width */
+  height: 2rem; /* Slider handle height */
   border-radius: 50%;
   background: #381460; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
 
 .slider::-moz-range-thumb {
-  width: 1.5rem; /* Set a specific slider handle width */
-  height: 1.5rem; /* Slider handle height */
+  width: 2rem; /* Set a specific slider handle width */
+  height: 2rem; /* Slider handle height */
   border-radius: 50%;
   background: #381460; /* Green background */
   cursor: pointer; /* Cursor on hover */
@@ -75,6 +75,14 @@ html, body {
 
   .player {
     max-width: 30rem;
+  }
+
+}
+
+@media (max-width: 60em) {
+
+  .player {
+    min-width: 25rem;
   }
 
 }
