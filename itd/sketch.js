@@ -11,10 +11,10 @@ window.onload = function() {
   var slider = document.getElementById("myRange");
   var output = document.getElementById("demo");
 
-  output.innerHTML = slider.value/40 + ' ms delay';
+  output.innerHTML = slider.value/10 + ' ms delay';
 
   slider.oninput = function() {
-    output.innerHTML = this.value/40 + ' ms delay';
+    output.innerHTML = this.value/10 + ' ms delay';
   }
 
   let yodelBuffer;
@@ -45,7 +45,7 @@ window.onload = function() {
     var leftDelay = context.createDelay();
     var rightDelay = context.createDelay();
 
-    var delay = slider.value/40;
+    var delay = slider.value/10;
 
     if (direction == 'mid') {
         leftDelay.delayTime.value = 0/1000;
